@@ -11,9 +11,9 @@ class Dianping():
         self.session = Session()
 
         # 数据库
-        self.client = pymongo.MongoClient(host='localhost', port=27017)
-        self.db = self.client.dzdp
-        self.collection = self.db.store
+        self.client = pymongo.MongoClient(host=MONGO_URI, port=MONGO_PORT)
+        self.db = self.client.MONGO_DB
+        self.collection = self.db.MONGO_COLLECTION
 
     def run(self):
         """
