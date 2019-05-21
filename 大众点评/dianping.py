@@ -37,6 +37,7 @@ class Dianping():
                     # print(shop_list)
                     for shop in shop_list:
                         data = parse_data(shop, css_result, num_dict, address_dict, line_dict, tag_dict)
+                        self.mongodb(data)
 
                         # 进入全部评论页面，仅测试第一页
                         comment_url = data['src'] + '/review_all/p1'
@@ -48,8 +49,7 @@ class Dianping():
                                 phone_info = selector.xpath('//div[@class="phone-info"]//text()').extract()
                                 phone_number = process_phone_number(phone_info)
                                 print(phone_number.strip())
-                                data['phone_number'] = phone_number.strip().replace('\xa0', ' ')
-                                self.mongodb(data)
+                                # data['phone_number'] = phone_number.strip().replace('\xa0', ' ')
                                 css_link = 'http:' + re.findall('.*?href="(.*?.svgtextcss.*?)"', res.text)[0]
                                 # print(css_link)
                                 resp = requests.get(css_link)
