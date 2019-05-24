@@ -5,20 +5,17 @@
 项目目录
 
 │  config.py
+│  parse_dianpu.py
+│  parse_comment.py
 │  dianping.py
-│  parse.py
 │  proxy.py
 │  README.md
-│  requirements.txt
-│
-├─utils
-│      common.py
-│      ua.log
-│      __init__.py
+│  ua.log
 │
 └─view
         analysis*.png
         db.png
+        
 环境依赖
 
 python 3.7.2
