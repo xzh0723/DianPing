@@ -2,20 +2,6 @@
 =======
 
   破解大众点评svg矢量图与字体资源替换反爬。
-
-项目目录
--------
-│  config.py
-│  parse_dianpu.py
-│  parse_comment.py
-│  dianping.py
-│  proxy.py
-│  README.md
-│  ua.log
-│
-└─view
-        analysis*.png
-        db.png
         
 环境依赖
 ---------
