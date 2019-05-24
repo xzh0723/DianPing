@@ -54,7 +54,7 @@ Headers 添加随机 UA 和 Refer 参数
 >>> python dianping.py
 抓取结果
 
-database screenshot
+![image](https://github.com/xzh0723/dzdp/blob/master/view/db_dianpu.png.png)
 
 公告
 
