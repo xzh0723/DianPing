@@ -55,6 +55,7 @@ Headers 添加随机 UA 和 Refer 参数
 抓取结果
 
 ![image](https://github.com/xzh0723/dzdp/blob/master/view/db_dianpu.png.png)
+![image](https://github.com/xzh0723/dzdp/blob/master/view/db_pinglun.png.png)
 
 公告
 
