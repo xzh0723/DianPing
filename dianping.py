@@ -39,9 +39,6 @@ class Dianping():
                     shop_list = soup.select('#shop-all-list')[0].find('ul').find_all('li')
                     # print(shop_list)
 
-                    # 如果在这个for循环内解析评论，会导致下一个店铺无法完成字符替换，不知道为什么。。
-                    # 所以我单独用一个list封装店铺详情链接，用另一个for循环获取评论
-
                     # 解析获取店铺信息
                     src_list = []
                     for shop in shop_list:
